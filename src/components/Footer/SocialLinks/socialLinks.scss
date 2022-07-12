@@ -1,0 +1,50 @@
+.social-links {
+    a {
+        text-decoration: none;
+        color: red;
+    }
+
+    ul {
+        list-style-type: none;
+        border-left: 2px solid red;
+
+        li {
+            margin: 10px 0;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            opacity: .5;
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        a {
+            margin-left: 10px;
+        }
+    }
+
+    svg {
+        font-size: 24px;
+    }
+
+    .phone-address svg {
+        color: green;
+    }
+
+    .fb-address svg{
+        color: blue;
+    }
+
+    .whatsapp-address {
+        color: green;
+    }
+
+    .viber-address {
+        color: #750080;
+    }
+
+    .telegram-address {
+        color: #00b7ff;
+    }
+}
