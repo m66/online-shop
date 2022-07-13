@@ -6,16 +6,21 @@
 
     ul {
         list-style-type: none;
-        border-left: 2px solid red;
+        border: 2px solid red;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 0 20px red;
 
         li {
             margin: 10px 0;
             display: flex;
             justify-content: start;
             align-items: center;
-            opacity: .5;
+            opacity: .7;
+
             &:hover {
                 opacity: 1;
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
             }
         }
 
@@ -32,7 +37,7 @@
         color: green;
     }
 
-    .fb-address svg{
+    .fb-address svg {
         color: blue;
     }
 
@@ -46,5 +51,11 @@
 
     .telegram-address {
         color: #00b7ff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .social-links {
+        margin: 30px 20px;
     }
 }

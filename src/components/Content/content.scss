@@ -1,0 +1,50 @@
+.assortment {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+    .categories {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .category-item {
+        height: 150px;
+        width: 30%;
+        min-width: 200px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        background-color: gray;
+        background-image: url('../../images/carousel/alexander-andrews-anUOLC3zMD4-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: .7;
+
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+            color: red;
+            font-size: 26px;
+            font-weight: 900;
+        }
+
+        span {
+            font-size: large;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

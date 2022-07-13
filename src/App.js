@@ -1,22 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 import PageRoutes from "./routes/PageRoutes";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
-        <Route path="/" element={<Content />}>
-
-        </Route>
-      </Routes>
-       */}
-      <Header />
+      <ScrollToTop smooth top="450" style={{boxShadow: "0 0 15px grey"}}/>
       <PageRoutes />
-      <Footer />
     </div>
   );
 }
